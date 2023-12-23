@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{%block title%}
+Home
+{%endblock title%}
+
+{%block body%}
+<div class="container-fluid my-2 mx-0">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/Python.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Python Programming</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/Coding.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Computer Programming</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/Computer_Networking.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Computer Network Fundamentals</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/Networking_fundamentals.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Computer Network Security</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/Cyber.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cyber Security</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<h1 class="my-5" style="text-align:center">Projects</h5>
+
+<div class="container my-5">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/web.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Web Based Chat Application</h4>
+          <p class="card-text">This application is used for chat with different people at a time. You register yourself on the application and chat the stranger person which are online on the application.</p>
+          <a href="https://github.com/dragonwolf1o1/Web-Bassed-Chat-Application" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/Hash.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Hash Finder</h4>
+          <p class="card-text">This tool is basically find the hash of you input text or files in different algorithm which you want.</p>
+          <a href="https://github.com/dragonwolf1o1/Hash-Finder" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/jam.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Internet Network Jammer</h4>
+          <p class="card-text">This tool is deauth the individual person in your network which you want. The attacker enters the victim's IP address and MAC address for jamming also you sniff the victim's network packets.</p>
+          <a href="https://github.com/dragonwolf1o1/Internal-Network-Jammer-using-Python" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/TET.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Text Encryption Tool</h4>
+          <p class="card-text">This tool is encrypt you given text which you enter in the given input box and also you decrypt this encrypted data. The security point is it will not encrypt or decrypt your text untill you enter the password, and i will share this password on my project's github page.</p>
+          <a href="https://github.com/dragonwolf1o1/Text-Encryption-Tool" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/bms.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Banking Managment System</h4>
+          <p class="card-text">This app is fullfill the basic task of Banking like <b>Open Acount</b> <b>Deposit Amount</b> <b>Withdraw Amount</b> <b>Close Acount</b> all this credentials are save in the database(mysql)</p>
+          <a href="https://github.com/dragonwolf1o1/Banking-Managment-System" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/hv.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Hash Verifier</h4>
+          <p class="card-text">This app will verify your file's hash in different algorithms. First you enter the knowing hash value, second put your file location and third choose the hashing algorithm. If, the hash will verified it shows <b>Verified!</b> otherwise it shows<b> Unverified</b>.</p>
+          <a href="https://github.com/dragonwolf1o1/Hash-Verifier" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/psc.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Password Strength Checker</h4>
+          <p class="card-text">This app is basically check the strength of your password which you are put in the input field,this app is show you password's strength in two stages first is <b>Weak</b> and second is <b>Strong</b>. Also you generate the hash of given password in <b>md5 hash algorithm.</b></p>
+          <a href="https://github.com/dragonwolf1o1/Password-Strength-Checker" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm" style="width: 23rem;">
+        <img src="static/ics.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">E-Commerce Site</h4>
+          <p class="card-text">This project contain a E-Commerce site which include a <b>home page</b>, <b>register page</b>, <b>login page</b> and a <b>contact us page</b>. This site is based on the car store where we purchase a luxurious cars.</p>
+          <a href="https://github.com/dragonwolf1o1/E-Commerce-Site" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%endblock body%}
+  

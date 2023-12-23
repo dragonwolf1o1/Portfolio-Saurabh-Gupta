@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{%block title%}
+Contact Us
+{%endblock title%}
+
+{%block body%}
+
+<h1 class="text-center">Contact Us</h1>
+<div class="container">
+
+<form class="row g-3 needs-validation" method="post" action="/contactus">
+  {% csrf_token %}
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" name="first_name" id="validationCustom01"  required placeholder="Enter First Name">
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" name="last_name" id="validationCustom02"required placeholder="Enter Last Name">
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <div class="input-group has-validation">
+      <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+      <div class="invalid-feedback">
+        Please enter right Email.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Phone Number</label>
+    <input type="text" class="form-control" name="phone"  required placeholder="Enter Phone Number">
+    <div class="invalid-feedback">
+      Please provide a valid Phone Number.
+    </div>
+  </div>
+  <div class="mb-8">
+    <label for="exampleFormControlTextarea1" class="form-label">Tell me why you Contact Me</label>
+    <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="col-12">  
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>
+</div>
+{%endblock body%}
